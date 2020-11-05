@@ -143,6 +143,41 @@ nav ul {
   }
 }
 
+#myselfie{
+	width: 500px
+}
+
+@media screen and (max-width: 1000px) {
+  #myselfie {
+	width: 250px
+  }
+}
+
+#mypeanuts{
+	height: 500px
+}
+
+@media screen and (max-width: 1300px) {
+  #mypeanuts {
+	height: 250px
+  }
+}
+
+#myshow{
+	height: 350px
+}
+
+@media screen and (max-width: 1300px) {
+  #myshow {
+	height: 220px
+  }
+}
+
+ol li {
+	font-size: 20px;
+	line-height: 23px;
+}
+
 a:link {
   text-decoration: none;
 }
