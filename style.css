@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 
-:root{
+:root {
     font-family: 'Vollkorn', serif;
     font-size: 16px;
     --text-primary: #4e4e4e;
@@ -12,30 +12,30 @@
     --main-accent: rgb(112, 108, 232);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     padding-bottom: 25rem;
     background-color: var(--bg-primary);
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 0.25rem;
 }
 
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
     background: #1e1e24;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background: var(--main-accent)
 }
 
-main{
+main {
     margin: auto;
     max-width: 800px;
     margin-top: 5rem;
@@ -43,11 +43,15 @@ main{
     padding: 0rem;
 }
 
-.page-title{
+.post-info-line {
+    margin-top: .5rem;
+}
+
+.page-title {
     margin: 0;
 }
 
-.topbar{
+.topbar {
     position: fixed;
     top: 0;
     margin: 0;
@@ -59,7 +63,7 @@ main{
     z-index: 99999;
 }
 
-.navbar{
+.navbar {
     max-width: 45rem;
     min-width: 375px;
     margin: 0 auto;
@@ -71,13 +75,13 @@ main{
     margin: 0;
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .nav-item{
-      width:100%;
-  }
+.nav-item {
+    width: 100%;
+}
 
-.nav-link{
+.nav-link {
     padding-top: .25em;
     justify-content: center;
     display: flex;
@@ -97,16 +101,16 @@ main{
     padding-top: 0em;
 }
 
-.link-text{
+.link-text {
     display: block;
 }
 
-.nav-link svg{
+.nav-link svg {
     width: 2rem;
     min-width: 2rem;
 }
 
-#nav-active{
+#nav-active {
     filter: grayscale(0%) opacity(1);
     border-bottom: var(--main-accent);
     border-width: 0px;
@@ -115,14 +119,14 @@ main{
     color: var(--main-accent)
 }
 
-.posts-container{
+.posts-container {
     align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.post{
+.post {
     position: relative;
     width: 80%;
     margin: 1rem;
@@ -132,7 +136,7 @@ main{
     box-shadow: 1.5px 2px rgba(0, 0, 0, 0.062), -3px 0 .4em rgba(0, 0, 0, 0.062);
 }
 
-.post-title{
+.post-title {
     margin: 0rem;
     margin-bottom: .1em;
     padding: 0rem;
@@ -140,20 +144,20 @@ main{
     line-height: 1.1em;
 }
 
-.post-content{
+.post-content {
     margin: 0rem;
     padding: 0rem;
     color: var(--text-primary);
 }
 
-.post-image{
+.post-image {
     float: right;
     width: 8rem;
     max-height: 8rem;
     margin-right: 1rem;
 }
 
-.post-image-small{
+.post-image-small {
     float: right;
     width: 3rem;
     max-height: 8rem;
@@ -162,18 +166,18 @@ main{
     margin-bottom: 1em;
 }
 
-.post-languages{
+.post-languages {
     background-color: var(--main-accent);
     color: white;
     margin: 0;
     padding: 0.25em 0.3em 0.0em 0.3em;
 }
 
-.bh-post{
+.bh-post {
     border-radius: 10%;
 }
 
-.profile-picture{
+.profile-picture {
     float: right;
     width: 7rem;
     max-height: 8rem;
@@ -187,13 +191,13 @@ main{
     border-width: 1.5px;
 }
 
-.post-list{
+.post-list {
     margin: 0rem;
     padding-left: 1.7rem;
 }
 
-.fa-secondary{
-    color:var(--main-accent)
+.fa-secondary {
+    color: var(--main-accent)
 }
 
 a:visited {
@@ -201,74 +205,73 @@ a:visited {
     color: var(--main-accent)
 }
 
-a{
+a {
     color: var(--main-accent)
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-    .nav-link svg{
+    .nav-link svg {
         width: 1.5rem;
         min-width: 1.5rem;
     }
 
-    .nav-link{
+    .nav-link {
         padding-top: 0;
         padding-bottom: 0;
         height: 3.4rem;
     }
 
-    .link-text{
+    .link-text {
         font-size: 12px;
     }
 
-    #nav-active{
+    #nav-active {
         border-top: var(--main-accent);
         border-width: 0px;
         border-top-width: 3.5px;
         border-style: solid;
     }
 
-    .topbar{
+    .topbar {
         top: auto;
         bottom: 0;
     }
 
-    .topbar-container{
+    .topbar-container {
         padding-top: 0rem;
     }
 
-    .post{
+    .post {
         position: relative;
         width: 90%;
         margin: 1rem;
         padding: 1rem;
     }
 
-    .post-image{
+    .post-image {
         width: 6.7rem;
         max-height: 8rem;
         margin-right: 0rem;
     }
 
-    .profile-picture{
+    .profile-picture {
         width: 5.9rem;
     }
 
-    .post-image-small{
+    .post-image-small {
         width: 2.8rem;
         max-height: 8rem;
         margin-right: 0rem;
     }
 
-    main{
+    main {
         margin-top: 0.5rem;
     }
 
-    .post-list{
+    .post-list {
         margin: 0rem;
         padding-left: 1.4em;
     }
 
-  }
-
+}

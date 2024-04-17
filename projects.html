@@ -129,11 +129,11 @@
 
         <div class="posts-container">
             <div class="post">
-                <img src="images/web.png" alt="selfie" class="post-image-small">
-                <h1 class="post-title">This Website</h1>
+                <img style="border-radius: 1rem;" src="images/profile.jpg" alt="selfie" class="post-image-small">
+                <h1 class="post-title">Portfolio Website</h1>
                 <p class="post-content">
                 <ul class="post-list">
-                    <li><span class="post-languages">HTML, CSS</span></li>
+                    <li><b>Resources Used: </b>HTML, CSS, Ubuntu, Apache</li>
                     <li><b>Source Code:</b> <a id="slink" href="https://github.com/cadeheinberg/cadeheinberg"
                             target="_blank">github</a></li>
                     <li><b>Start/End:</b> 12.2020 -> ongoing</li>
@@ -142,46 +142,85 @@
                 The website you are currently on.
                 I am currently working on a REACT version
                 that will work more seamlessly and load
-                pages quicker.
-                </p>
-            </div>
-            <div class="post">
-                <img src="images/band_mebmbers.jpg" alt="selfie" class="post-image-small bh-post">
-                <h1 class="post-title">Band Website</h1>
-                <p class="post-content">
-                <ul class="post-list">
-                    <li><span class="post-languages">HTML, CSS, JavaScipt</span></li>
-                    <li><b>Source Code:</b> <a id="slink" href="https://github.com/cadeheinberg/brockhampton-website"
-                            target="_blank">github</a></li>
-                    <li><b>Start/End:</b> 06.2022 -> ongoing</li>
-                    <li><b>Hours Logged:</b> 100-200 hours</li>
-                </ul><br>
-                A pretend <a href="https://cadeheinberg.github.io/brockhampton-website/" target="_blank">website</a>
-                made for the band BROCKHAMPTON. There is a functioning store, about, and home page for you
-                to learn more about the band and my thoughts on them.
+                pages quicker. Traditionally I had been hosting it
+                on my local Ubuntu machine using Apache and Port Forwarding
+                to make it public but it's much easier to use
+                GitHub hosting if you dont have any backend scripting on your website.
                 </p>
             </div>
             <div class="post">
                 <img src="images/Redstone.png" alt="selfie" class="post-image-small">
                 <h1 class="post-title">Minecraft Server</h1>
                 <ul class="post-list">
-                    <li><span class="post-languages">Java, Spigot, MySQL</span></li>
-                    <li><b>Source Code</b> <a id="slink"
-                            href="https://github.com/cadeheinberg/SKplugin/tree/main/SevenKitsPlugin/src/me/cade/PluginSK"
+                    <li><b>Resources Used: </b>Java, <a id="slink"
+                            href="https://github.com/cadeheinberg/VanaByte/tree/master/src/main/java/me/cade/vanabyte"
+                            target="_blank">Spigot API</a>, MySQL, Ubuntu</li>
+                    <li><b>Source Code: </b><a id="slink"
+                            href="https://github.com/cadeheinberg/VanaByte/tree/master/src/main/java/me/cade/vanabyte"
                             target="_blank">github</a></li>
                     <li><b>Start/End:</b> 3.2020 -> ongoing</li>
                     <li><b>Hours Logged:</b> 1500+ hours</li>
-                    <li><b>Server IP:</b> cadeheinberg.com</li>
-                    <li><b>Server Status:</b> offline</li>
                 </ul><br>
                 Minecraft is a popular Java based video game.
-                I make Java plugins for a Minecraft server that I host.
-                I have a MySQL server that stores the player stats,
-                leaderboards, achievements, etc. I taught
-                myself how to do all of this via YouTube, documentation,
-                and getting help on forums. The server is joinable
-                via any Java edition Minecraft Launcher with the ip
-                address above.
+                Since 2020 I have been making Java plugins for a Minecraft server that I host.
+                Most Minecraft Plugins including mine are built upon the Spigot API/Library.
+                I also use a MySQL server that stores the player stats, leaderboards, achievements, etc.
+                <br><br>I have been hosting the server from an ubuntu machine at my house,
+                but I have also periodically hosted it on Google Cloud. Going from a fresh
+                Ubuntu install to a fully functioning Minecraft + MySQL server is quite the
+                endeavor. But in the end I Port Forwarded the server and have been able
+                to join SSF to the console remotely.
+            </div>
+            <div class="post">
+                <img src="images/tableau_icon.png" alt="selfie" class="post-image-small">
+                <h1 class="post-title">IMDb Interactive</h1>
+                <ul class="post-list">
+                    <li><b>Resources Used: </b>Tableau, <a id="slink"
+                            href="https://developer.imdb.com/non-commercial-datasets/" target="_blank">IMDb
+                            Datasets</a>, SQLite, Python, GitBash, Jupyter Notebook, DB Browser</li>
+                    <li><b>Source Tableau File: </b><a id="slink" href="" target="_blank">download</a></li>
+                    <li><b>Source Code:</b> <a id="slink" href="" target="_blank">github</a></li>
+                    <li><b>Video Tutorial: </b><a id="slink" href="" target="_blank">YouTube</a></li>
+                    <li><b>Start/End:</b> 3.2020 -> ongoing</li>
+                    <li><b>Hours Logged:</b> 1500+ hours</li>
+                </ul>
+                <div class="post-info-line">1. I downloaded 7 tab separated files from the IMDb dataset containing
+                    various information on movies and tv shows</div>
+                <div class="post-info-line">2. IMDB uses “\N” for NULL values in their .tsv files, so I wrote a
+                    python script to change “\N” characters to be “null”.</div>
+                <div class="post-info-line">3. I used GitBash to execute various SQLite commands to convert the tsv
+                    files
+                    into tables inside of a movies.db file allowed me to set “null” strings to NULL
+                    inside .db file. See the source code above for iist of these commands</div>
+                <div class="post-info-line">4. I made a Jupter Notebook envirnoment and loaded the .db file into SQLite.
+                    I performed an extensive amount of queries to produce new tables from the
+                    original ones that held data in an optimized form. This would make graphing
+                    and interactions faster.</div>
+                <div class="post-info-line">5. I used DB Browser to convert the new tables to .csv files to load into
+                    Tableau.</div>
+                <div class="post-info-line">6. I used Tableau to create several sheets visualizing the data in the .csv
+                    files.
+                    I created a dashboard to display all of these sheets in one place and created
+                    calculated fields and custom filters to allow interactions between each visualization
+                    based on user inputs.</div>
+            </div>
+            <div class="post">
+                <img src="images/band_mebmbers.jpg" alt="selfie" class="post-image-small bh-post">
+                <h1 class="post-title">Band Website</h1>
+                <p class="post-content">
+                <ul class="post-list">
+                    <li><b>Resources Used: </b>HTML, CSS, JavaScript</li>
+                    <li><b>Source Code:</b> <a id="slink" href="https://github.com/cadeheinberg/brockhampton-website"
+                            target="_blank">github</a>
+                    </li>
+                    <li><b>Start/End:</b> 06.2022 -> ongoing</li>
+                    <li><b>Hours Logged:</b> 100-200 hours</li>
+                </ul><br>
+                A pretend <a href="https://cadeheinberg.github.io/BandWebsite/" target="_blank">website</a>
+                made for the band BROCKHAMPTON. There is a pretend store that uses JavaScript. Theres also an about
+                and
+                home page for you
+                to learn more about the band and my thoughts on them.
                 </p>
             </div>
         </div>
