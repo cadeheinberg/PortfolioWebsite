@@ -10,6 +10,7 @@
     --transition-speed: 600ms;
     --main-old: #ab00c2;
     --main-accent: rgb(112, 108, 232);
+    --box-shadow:
 }
 
 * {
@@ -28,7 +29,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #1e1e24;
+    background: #ffffff;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -41,6 +42,10 @@ main {
     margin-top: 5rem;
     padding: 0rem;
     padding: 0rem;
+}
+
+#more {
+    display: none;
 }
 
 .post-info-line {
@@ -112,10 +117,7 @@ main {
 
 #nav-active {
     filter: grayscale(0%) opacity(1);
-    border-bottom: var(--main-accent);
     border-width: 0px;
-    border-bottom-width: 5px;
-    border-style: solid;
     color: var(--main-accent)
 }
 
@@ -166,14 +168,7 @@ main {
     margin-bottom: 1em;
 }
 
-.post-languages {
-    background-color: var(--main-accent);
-    color: white;
-    margin: 0;
-    padding: 0.25em 0.3em 0.0em 0.3em;
-}
-
-.bh-post {
+.post-image-radius {
     border-radius: 10%;
 }
 
@@ -186,9 +181,6 @@ main {
     margin-bottom: 1rem;
     margin-left: 1.2rem;
     border-radius: 50%;
-    border: solid;
-    border-color: rgba(116, 116, 116, 0.487);
-    border-width: 1.5px;
 }
 
 .post-list {
