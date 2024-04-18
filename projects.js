@@ -27,11 +27,11 @@ function readMoreClick(event) {
     if (more_text.style.maxHeight && more_text.style.maxHeight !== "0px") {
         // hide read more
         more_text.style.maxHeight = "0px";
-        svg_btn.setAttribute("transform", "rotate(0)");
+        svg_btn.classList.toggle('post-read-more-svg-rotated');
     } else {
         // expand read more
         // Set a max-height that's greater than the height of the content
         more_text.style.maxHeight = more_text.scrollHeight + "px";
-        svg_btn.setAttribute("transform", "rotate(180)");
+        svg_btn.classList.toggle('post-read-more-svg-rotated');
     }
 }
