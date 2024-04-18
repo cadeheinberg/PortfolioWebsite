@@ -179,6 +179,10 @@ p {
     transition-duration: 0.5s;
 }
 
+.read-more-dots {
+    display: inline;
+}
+
 .post-read-more-svg-rotated {
     transform: rotate(180deg);
     transition-duration: 0.5s;

@@ -24,13 +24,16 @@ function readMoreClick(event) {
     var svg_btn = event.currentTarget;
     var post = svg_btn.parentElement;
     var more_text = post.getElementsByClassName('post-content-hide')[0];
+    var more_dots = post.getElementsByClassName('read-more-dots')[0]
     if (more_text.style.maxHeight && more_text.style.maxHeight !== "0px") {
         // hide read more
+        more_dots.style.display = "inline"
         more_text.style.maxHeight = "0px";
         svg_btn.classList.toggle('post-read-more-svg-rotated');
     } else {
         // expand read more
         // Set a max-height that's greater than the height of the content
+        more_dots.style.display = "none"
         more_text.style.maxHeight = more_text.scrollHeight + "px";
         svg_btn.classList.toggle('post-read-more-svg-rotated');
     }
