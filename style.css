@@ -158,6 +158,13 @@ p {
 
 .post-content {
     margin-top: .5rem;
+    margin-bottom: 1rem;
+    padding: 0rem;
+    color: var(--text-primary);
+}
+
+.post-content-dynamic {
+    margin-top: .5rem;
     padding: 0rem;
     color: var(--text-primary);
 }
@@ -258,6 +265,7 @@ a {
         width: 90%;
         margin: 1rem;
         padding: 1rem;
+        padding-bottom: 0;
     }
 
     .post-image {
@@ -283,6 +291,12 @@ a {
     .post-list {
         margin: 0rem;
         padding-left: 1.4em;
+    }
+
+    .post-read-more-svg {
+        height: 2.5rem;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
     }
 
 }
