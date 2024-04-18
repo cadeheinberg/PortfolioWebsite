@@ -254,13 +254,6 @@ a {
         font-size: 12px;
     }
 
-    #nav-active {
-        border-top: var(--main-accent);
-        border-width: 0px;
-        border-top-width: 3.5px;
-        border-style: solid;
-    }
-
     .topbar {
         top: auto;
         bottom: 0;
