@@ -44,8 +44,17 @@ main {
     padding: 0rem;
 }
 
-#more {
-    display: none;
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.post-content-hide {
+    max-height: 0;
+    overflow: hidden;
+    display: block;
+    transition: max-height 0.5s ease-in-out;
+    /* smooth transition for max-height */
 }
 
 .post-info-line {
@@ -133,6 +142,7 @@ main {
     width: 80%;
     margin: 1rem;
     padding: 1rem;
+    padding-bottom: 0rem;
     background-color: var(--bg-secondary);
     border-radius: .6rem;
     box-shadow: 1.5px 2px rgba(0, 0, 0, 0.062), -3px 0 .4em rgba(0, 0, 0, 0.062);
@@ -147,9 +157,18 @@ main {
 }
 
 .post-content {
-    margin: 0rem;
+    margin-top: .5rem;
     padding: 0rem;
     color: var(--text-primary);
+}
+
+.post-read-more-svg {
+    width: 100%;
+    height: 2.5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    margin: 0;
+    display: block;
 }
 
 .post-image {
