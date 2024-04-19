@@ -57,6 +57,7 @@ function switchPage(pageName, a_btn) {
             setTimeout(() => {
                 contentArea.innerHTML = html;
                 contentArea.style.opacity = 1; // This will trigger the CSS transition
+                window.scrollTo(0, 0);
             }, 300); // Adjust time as needed to match or prepare for the CSS effect
         })
         .catch(error => {
