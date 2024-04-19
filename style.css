@@ -20,7 +20,7 @@
 body {
     margin: 0;
     padding: 0;
-    padding-bottom: 25rem;
+    padding-bottom: 10rem;
     background-color: var(--bg-primary);
 }
 
@@ -235,6 +235,7 @@ p {
 .post-list {
     margin: 0rem;
     padding-left: 1.7rem;
+    color: var(--text-primary);
 }
 
 .fa-secondary {
