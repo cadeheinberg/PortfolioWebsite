@@ -1,302 +1,163 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cade Heinberg</title>
-    <meta name="description" content="Cade Heinberg's
-    portfolio. Showcasing Cade's resume, projects, work, 
-    college courses and more!">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <script src="projects.js"></script>
-</head>
-
-<body>
-    <div class="topbar">
-        <div class="topbar-container">
-            <nav class="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
-                                class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 576 512">
-                                <g class="fa-group">
-                                    <path fill="currentColor"
-                                        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
-                                        class="fa-primary">
-                                    </path>
-                                    <path fill="currentColor"
-                                        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
-                                        class="fa-secondary">
-                                    </path>
-                                </g>
-                            </svg>
-                            <span class="link-text">Contact</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="skills.html" class="nav-link">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-edit"
-                                class="svg-inline--fa fa-user-edit fa-w-20" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                                <g class="fa-group">
-                                    <path fill="currentColor"
-                                        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h274.9c-2.4-6.8-3.4-14-2.6-21.3l6.8-60.9 1.2-11.1 7.9-7.9 77.3-77.3c-24.5-27.7-60-45.5-99.9-45.5zm45.3 145.3l-6.8 61c-1.1 10.2 7.5 18.8 17.6 17.6l60.9-6.8 137.9-137.9-71.7-71.7-137.9 137.8zM633 268.9L595.1 231c-9.3-9.3-24.5-9.3-33.8 0l-37.8 37.8-4.1 4.1 71.8 71.7 41.8-41.8c9.3-9.4 9.3-24.5 0-33.9z"
-                                        class="fa-primary">
-                                    </path>
-                                    <path fill="currentColor"
-                                        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h274.9c-2.4-6.8-3.4-14-2.6-21.3l6.8-60.9 1.2-11.1 7.9-7.9 77.3-77.3c-24.5-27.7-60-45.5-99.9-45.5zm45.3 145.3l-6.8 61c-1.1 10.2 7.5 18.8 17.6 17.6l60.9-6.8 137.9-137.9-71.7-71.7-137.9 137.8zM633 268.9L595.1 231c-9.3-9.3-24.5-9.3-33.8 0l-37.8 37.8-4.1 4.1 71.8 71.7 41.8-41.8c9.3-9.4 9.3-24.5 0-33.9z"
-                                        class="fa-secondary">
-                                    </path>
-                                </g>
-                            </svg>
-                            <span class="link-text">Skills</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" id="nav-active">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code"
-                                class="svg-inline--fa fa-code fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 512">
-                                <g class="fa-group">
-                                    <path fill="currentColor"
-                                        d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
-                                        class="fa-primary">
-                                    </path>
-                                    <path fill="currentColor"
-                                        d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
-                                        class="fa-secondary">
-                                    </path>
-                                </g>
-                            </svg>
-                            <span class="link-text">Projects</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="work.html" class="nav-link">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="briefcase"
-                                class="svg-inline--fa fa-briefcase fa-w-16" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <g class="fa-group">
-                                    <path fill="currentColor"
-                                        d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"
-                                        class="fa-primary">
-                                    </path>
-                                    <path fill="currentColor"
-                                        d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"
-                                        class="fa-secondary">
-                                    </path>
-                                </g>
-                            </svg>
-                            <span class="link-text">Work</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="school.html" class="nav-link">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="university"
-                                class="svg-inline--fa fa-university fa-w-16" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <g class="fa-group">
-                                    <path fill="currentColor"
-                                        d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z">
-                                        class="fa-primary">
-                                    </path>
-                                    <path fill="currentColor"
-                                        d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"
-                                        class="fa-secondary">
-                                    </path>
-                                </g>
-                            </svg>
-                            <span class="link-text">School</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+<div class="posts-container">
+    <div class="post">
+        <img src="images/profile.jpg" alt="selfie" class="post-image-small post-image-radius">
+        <h1 class="post-title">Portfolio Website</h1>
+        <ul class="post-list">
+            <li><b>Resources Used: </b>HTML, CSS, Ubuntu, Apache</li>
+            <li><b>Source Code:</b> <a id="slink" href="https://github.com/cadeheinberg/cadeheinberg"
+                    target="_blank">github</a></li>
+            <li><b>Start/End:</b> 12.2020 -> ongoing</li>
+            <li><b>Hours Logged:</b> 200-300 hours</li>
+        </ul>
+        <div class="post-content-dynamic">
+            <span class="post-content-show">
+                <div class="post-info-line">The website you are currently on.
+                    I am currently working on a JavaScript version
+                    that will work more seamlessly.<span class="read-more-dots">..</span></div>
+            </span>
+            <span class="post-content-hide">
+                <div class="post-info-line">Traditionally I had been hosting it
+                    on my local Ubuntu machine using Apache and Port Forwarding
+                    to make it public but it's much easier to use
+                    GitHub hosting for now.</div>
+            </span>
         </div>
+        <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+            <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+        </svg>
     </div>
-
-    <main>
-
-        <div class="posts-container">
-            <div class="post">
-                <img src="images/profile.jpg" alt="selfie" class="post-image-small post-image-radius">
-                <h1 class="post-title">Portfolio Website</h1>
-                <ul class="post-list">
-                    <li><b>Resources Used: </b>HTML, CSS, Ubuntu, Apache</li>
-                    <li><b>Source Code:</b> <a id="slink" href="https://github.com/cadeheinberg/cadeheinberg"
-                            target="_blank">github</a></li>
-                    <li><b>Start/End:</b> 12.2020 -> ongoing</li>
-                    <li><b>Hours Logged:</b> 200-300 hours</li>
-                </ul>
-                <div class="post-content-dynamic">
-                    <span class="post-content-show">
-                        <div class="post-info-line">The website you are currently on.
-                            I am currently working on a JavaScript version
-                            that will work more seamlessly.<span class="read-more-dots">..</span></div>
-                    </span>
-                    <span class="post-content-hide">
-                        <div class="post-info-line">Traditionally I had been hosting it
-                            on my local Ubuntu machine using Apache and Port Forwarding
-                            to make it public but it's much easier to use
-                            GitHub hosting for now.</div>
-                    </span>
+    <div class="post">
+        <img src="images/Redstone.png" alt="selfie" class="post-image-small">
+        <h1 class="post-title">Minecraft Server</h1>
+        <ul class="post-list">
+            <li><b>Resources Used: </b>Java, <a id="slink"
+                    href="https://github.com/cadeheinberg/VanaByte/tree/master/src/main/java/me/cade/vanabyte"
+                    target="_blank">Spigot API</a>, MySQL, Ubuntu</li>
+            <li><b>Source Code: </b><a id="slink"
+                    href="https://github.com/cadeheinberg/VanaByte/tree/master/src/main/java/me/cade/vanabyte"
+                    target="_blank">github</a></li>
+            <li><b>Start/End:</b> 3.2020 -> ongoing</li>
+            <li><b>Hours Logged:</b> 1500+ hours</li>
+        </ul>
+        <div class="post-content-dynamic">
+            <span class="post-content-show">
+                <div class="post-info-line">Minecraft is a popular Java based video game.
+                    Since 2020 I have been making Java plugins for a Minecraft server that I host.<span
+                        class="read-more-dots">..</span>
                 </div>
-                <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                    xml:space="preserve">
-                    <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
-               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
-               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                </svg>
-            </div>
-            <div class="post">
-                <img src="images/Redstone.png" alt="selfie" class="post-image-small">
-                <h1 class="post-title">Minecraft Server</h1>
-                <ul class="post-list">
-                    <li><b>Resources Used: </b>Java, <a id="slink"
-                            href="https://github.com/cadeheinberg/VanaByte/tree/master/src/main/java/me/cade/vanabyte"
-                            target="_blank">Spigot API</a>, MySQL, Ubuntu</li>
-                    <li><b>Source Code: </b><a id="slink"
-                            href="https://github.com/cadeheinberg/VanaByte/tree/master/src/main/java/me/cade/vanabyte"
-                            target="_blank">github</a></li>
-                    <li><b>Start/End:</b> 3.2020 -> ongoing</li>
-                    <li><b>Hours Logged:</b> 1500+ hours</li>
-                </ul>
-                <div class="post-content-dynamic">
-                    <span class="post-content-show">
-                        <div class="post-info-line">Minecraft is a popular Java based video game.
-                            Since 2020 I have been making Java plugins for a Minecraft server that I host.<span
-                                class="read-more-dots">..</span>
-                        </div>
-                    </span>
-                    <span class="post-content-hide">
-                        <div class="post-info-line">Most Minecraft Plugins including mine are built upon the Spigot
-                            API/Library.
-                            I also use a MySQL server that stores the player stats, leaderboards, achievements, etc. I
-                            have been hosting the server from an ubuntu machine at my house,
-                            but I have also periodically hosted it on Google Cloud. Going from a fresh
-                            Ubuntu install to a fully functioning Minecraft + MySQL server is quite the
-                            endeavor. But in the end I Port Forwarded the server and have been able
-                            to join SSF to the console remotely.</div>
-                    </span>
-                </div>
-                <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                    xml:space="preserve">
-                    <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
-               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
-               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                </svg>
-            </div>
-            <div class="post">
-                <img src="images/tableau_icon.png" alt="selfie" class="post-image-small">
-                <h1 class="post-title">IMDb Interactive</h1>
-                <ul class="post-list">
-                    <li><b>Resources Used: </b>Tableau, <a id="slink"
-                            href="https://developer.imdb.com/non-commercial-datasets/" target="_blank">IMDb
-                            Datasets</a>, SQLite, Python, GitBash, Jupyter Notebook, DB Browser</li>
-                    <li><b>Source Tableau File: </b><a id="slink" href="" target="_blank">download</a></li>
-                    <li><b>Source Code:</b> <a id="slink" href="" target="_blank">github</a></li>
-                    <li><b>Video Tutorial: </b><a id="slink" href="" target="_blank">YouTube</a></li>
-                    <li><b>Start/End:</b> 3.2020 -> ongoing</li>
-                    <li><b>Hours Logged:</b> 1500+ hours</li>
-                </ul>
-                <div class="post-content-dynamic">
-                    <span class="post-content-show">
-                        <div class="post-info-line">An interactive web based visualizer for IMDbs free dataset on
-                            Movies, TV shows, actors, producers, writers, etc.<span class="read-more-dots">..</span>
-                        </div>
-                    </span>
-                    <span class="post-content-hide">
-                        <div class="post-info-line"><b>Step 1:</b> I downloaded 7 tab separated files from the IMDb
-                            dataset
-                            containing
-                            various information on movies and tv shows</div>
-                        <div class="post-info-line"><b>Step 2:</b> IMDB uses “\N” for NULL values in their .tsv files,
-                            so I wrote a
-                            python script to change “\N” characters to be “null”.</div>
-                        <div class="post-info-line"><b>Step 3:</b> I used GitBash to execute various SQLite commands to
-                            convert the
-                            tsv
-                            files
-                            into tables inside of a movies.db file allowed me to set “null” strings to NULL
-                            inside .db file. See the source code above for iist of these commands</div>
-                        <div class="post-info-line"><b>Step 4:</b> I made a Jupter Notebook envirnoment and loaded the
-                            .db file into
-                            SQLite.
-                            I performed an extensive amount of queries to produce new tables from the
-                            original ones that held data in an optimized form. This would make graphing
-                            and interactions faster.</div>
-                        <div class="post-info-line"><b>Step 5:</b> I used DB Browser to convert the new tables to .csv
-                            files to load
-                            into
-                            Tableau.</div>
-                        <div class="post-info-line"><b>Step 6:</b> I used Tableau to create several sheets visualizing
-                            the data in
-                            the
-                            .csv
-                            files.
-                            I created a dashboard to display all of these sheets in one place and created
-                            calculated fields and custom filters to allow interactions between each visualization
-                            based on user inputs.</div>
-                    </span>
-                </div>
-                <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                    xml:space="preserve">
-                    <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
-               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
-               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                </svg>
-            </div>
-            <div class="post">
-                <img src="images/band_mebmbers.jpg" alt="selfie" class="post-image-small post-image-radius">
-                <h1 class="post-title">Band Website</h1>
-                <ul class="post-list">
-                    <li><b>Resources Used: </b>HTML, CSS, JavaScript</li>
-                    <li><b>Source Code:</b> <a id="slink" href="https://github.com/cadeheinberg/brockhampton-website"
-                            target="_blank">github</a>
-                    </li>
-                    <li><b>Start/End:</b> 06.2022 -> ongoing</li>
-                    <li><b>Hours Logged:</b> 100-200 hours</li>
-                </ul>
-                <div class="post-content-dynamic">
-                    <span class="post-content-show">
-                        <div class="post-info-line">A pretend <a href="https://cadeheinberg.github.io/BandWebsite/"
-                                target="_blank">website</a>
-                            made for the band BROCKHAMPTON. There is a pretend store that uses JavaScript. Theres also
-                            an about and home page for you to learn more about the band and my thoughts on them.<span
-                                class="read-more-dots">..</span></div>
-                    </span>
-                    <span class="post-content-hide">
-                        <div class="post-info-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Reiciendis, porro modi. Cupiditate aut
-                            blanditiis consequatur nulla rerum a at, tempore accusantium praesentium necessitatibus
-                            dolor vitae, sint, odit incidunt beatae quo!</div>
-                    </span>
-                </div>
-                <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
-                    xml:space="preserve">
-                    <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
-               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
-               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                </svg>
-            </div>
+            </span>
+            <span class="post-content-hide">
+                <div class="post-info-line">Most Minecraft Plugins including mine are built upon the Spigot
+                    API/Library.
+                    I also use a MySQL server that stores the player stats, leaderboards, achievements, etc. I
+                    have been hosting the server from an ubuntu machine at my house,
+                    but I have also periodically hosted it on Google Cloud. Going from a fresh
+                    Ubuntu install to a fully functioning Minecraft + MySQL server is quite the
+                    endeavor. But in the end I Port Forwarded the server and have been able
+                    to join SSF to the console remotely.</div>
+            </span>
         </div>
-    </main>
-
-</body>
-
-</html>
+        <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+            <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+        </svg>
+    </div>
+    <div class="post">
+        <img src="images/tableau_icon.png" alt="selfie" class="post-image-small">
+        <h1 class="post-title">IMDb Interactive</h1>
+        <ul class="post-list">
+            <li><b>Resources Used: </b>Tableau, <a id="slink" href="https://developer.imdb.com/non-commercial-datasets/"
+                    target="_blank">IMDb
+                    Datasets</a>, SQLite, Python, GitBash, Jupyter Notebook, DB Browser</li>
+            <li><b>Source Tableau File: </b><a id="slink" href="" target="_blank">download</a></li>
+            <li><b>Source Code:</b> <a id="slink" href="" target="_blank">github</a></li>
+            <li><b>Video Tutorial: </b><a id="slink" href="" target="_blank">YouTube</a></li>
+            <li><b>Start/End:</b> 3.2020 -> ongoing</li>
+            <li><b>Hours Logged:</b> 1500+ hours</li>
+        </ul>
+        <div class="post-content-dynamic">
+            <span class="post-content-show">
+                <div class="post-info-line">An interactive web based visualizer for IMDbs free dataset on
+                    Movies, TV shows, actors, producers, writers, etc.<span class="read-more-dots">..</span>
+                </div>
+            </span>
+            <span class="post-content-hide">
+                <div class="post-info-line"><b>Step 1:</b> I downloaded 7 tab separated files from the IMDb
+                    dataset
+                    containing
+                    various information on movies and tv shows</div>
+                <div class="post-info-line"><b>Step 2:</b> IMDB uses “\N” for NULL values in their .tsv files,
+                    so I wrote a
+                    python script to change “\N” characters to be “null”.</div>
+                <div class="post-info-line"><b>Step 3:</b> I used GitBash to execute various SQLite commands to
+                    convert the
+                    tsv
+                    files
+                    into tables inside of a movies.db file allowed me to set “null” strings to NULL
+                    inside .db file. See the source code above for iist of these commands</div>
+                <div class="post-info-line"><b>Step 4:</b> I made a Jupter Notebook envirnoment and loaded the
+                    .db file into
+                    SQLite.
+                    I performed an extensive amount of queries to produce new tables from the
+                    original ones that held data in an optimized form. This would make graphing
+                    and interactions faster.</div>
+                <div class="post-info-line"><b>Step 5:</b> I used DB Browser to convert the new tables to .csv
+                    files to load
+                    into
+                    Tableau.</div>
+                <div class="post-info-line"><b>Step 6:</b> I used Tableau to create several sheets visualizing
+                    the data in
+                    the
+                    .csv
+                    files.
+                    I created a dashboard to display all of these sheets in one place and created
+                    calculated fields and custom filters to allow interactions between each visualization
+                    based on user inputs.</div>
+            </span>
+        </div>
+        <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+            <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+        </svg>
+    </div>
+    <div class="post">
+        <img src="images/band_mebmbers.jpg" alt="selfie" class="post-image-small post-image-radius">
+        <h1 class="post-title">Band Website</h1>
+        <ul class="post-list">
+            <li><b>Resources Used: </b>HTML, CSS, JavaScript</li>
+            <li><b>Source Code:</b> <a id="slink" href="https://github.com/cadeheinberg/brockhampton-website"
+                    target="_blank">github</a>
+            </li>
+            <li><b>Start/End:</b> 06.2022 -> ongoing</li>
+            <li><b>Hours Logged:</b> 100-200 hours</li>
+        </ul>
+        <div class="post-content-dynamic">
+            <span class="post-content-show">
+                <div class="post-info-line">A pretend <a href="https://cadeheinberg.github.io/BandWebsite/"
+                        target="_blank">website</a>
+                    made for the band BROCKHAMPTON. There is a pretend store that uses JavaScript. Theres also
+                    an about and home page for you to learn more about the band and my thoughts on them.<span
+                        class="read-more-dots">..</span></div>
+            </span>
+            <span class="post-content-hide">
+                <div class="post-info-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reiciendis, porro modi. Cupiditate aut
+                    blanditiis consequatur nulla rerum a at, tempore accusantium praesentium necessitatibus
+                    dolor vitae, sint, odit incidunt beatae quo!</div>
+            </span>
+        </div>
+        <svg class="post-read-more-svg" fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+            <path fill="#706CE8" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+        </svg>
+    </div>
+</div>

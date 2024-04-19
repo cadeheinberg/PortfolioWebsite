@@ -36,12 +36,18 @@ body::-webkit-scrollbar-thumb {
     background: var(--main-accent)
 }
 
-main {
+#content-area {
     margin: auto;
     max-width: 800px;
     margin-top: 5rem;
     padding: 0rem;
     padding: 0rem;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+#content-area.visible {
+    opacity: 1;
 }
 
 p {
@@ -113,6 +119,7 @@ p {
     background: var(--bg-primary);
     color: var(--main-accent);
     padding-top: 0em;
+    cursor: pointer;
 }
 
 .link-text {
@@ -124,7 +131,7 @@ p {
     min-width: 2rem;
 }
 
-#nav-active {
+.nav-active {
     filter: grayscale(0%) opacity(1);
     border-width: 0px;
     color: var(--main-accent)
@@ -161,6 +168,12 @@ p {
     margin-bottom: 1rem;
     padding: 0rem;
     color: var(--text-primary);
+}
+
+.post-read-more-svg:hover {
+    cursor: pointer;
+    padding-bottom: .35rem;
+    padding-top: .35rem;
 }
 
 .post-content-dynamic {
