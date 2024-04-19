@@ -301,7 +301,9 @@ a {
     }
 
     main {
-        margin-top: 0.5rem;
+        padding: 0;
+        margin-top: 0rem;
+        background-color: red;
     }
 
     .post-list {
@@ -313,6 +315,10 @@ a {
         height: 2.5rem;
         padding-bottom: .5rem;
         padding-top: .5rem;
+    }
+
+    #content-area {
+        margin-top: 0rem;
     }
 
 }
