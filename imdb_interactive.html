@@ -4,31 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IMDb Interactive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(images/movies-background.jpg);
+            background-size: contain;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(84, 84, 84, 0.87);
+            /* Adjust the color and opacity as needed */
+            z-index: -1;
+            /* Ensure the overlay is behind the content */
+            height: 80rem;
+        }
+
+        header {
+            width: fit-content;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            opacity: calc(90%);
+            padding: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 1rem;
+        }
+
+        header h1 {
+            font-size: 5rem;
+            color: #464646;
+        }
+
+        header h2 {
+            color: #464646;
+        }
+
+        .tableauContainer {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: fit-content;
+            padding: 2rem;
+            padding-top: .5rem;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #f0f0f0;
+            border-radius: 1rem;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div class='tableauPlaceholder' id='viz1715120999935' style='position: relative'><noscript><a href='#'><img
-                    alt='Story 1 '
-                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IM&#47;IMDbInteractiveFreeDataset&#47;Story1&#47;1_rss.png'
-                    style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='IMDbInteractiveFreeDataset&#47;Story1' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IM&#47;IMDbInteractiveFreeDataset&#47;Story1&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-        </object></div>
-    <script
-        type='text/javascript'>                    var divElement = document.getElementById('viz1715120999935'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1150px'; vizElement.style.height = '902px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <header>
+        <h1>IMDb Interactive</h1>
+        <h2>By: Cade Heinberg</h2>
+    </header>
+    <div class="tableauContainer">
+        <div class='tableauPlaceholder' id='viz1715120999935' style='position: relative'><noscript><a href='#'><img
+                        alt='Story 1 '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IM&#47;IMDbInteractiveFreeDataset&#47;Story1&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='IMDbInteractiveFreeDataset&#47;Story1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IM&#47;IMDbInteractiveFreeDataset&#47;Story1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object></div>
+    </div>
+    <script type='text/javascript'>
+        function checkViewport() {
+            if (window.innerWidth < 1200) {
+                window.location.href = 'https://public.tableau.com/app/profile/cade.heinberg/viz/IMDbInteractiveFreeDataset/Story1'; // Replace with your desired URL
+            }
+        }
+
+        // Check viewport on initial load
+        checkViewport();
+
+        // Optionally, add an event listener to handle window resize
+        window.addEventListener('resize', checkViewport);
+    </script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1715120999935');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '1150px';
+        vizElement.style.height = '902px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
 </body>
 
 </html>
