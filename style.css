@@ -163,6 +163,17 @@ p {
     line-height: 1.1em;
 }
 
+.post-sub-title {
+    font-weight: 200;
+    margin: 0rem;
+    margin-left: .25rem;
+    margin-top: .75rem;
+    margin-bottom: .1em;
+    padding: 0rem;
+    color: var(--text-secondary);
+    line-height: 1.1em;
+}
+
 .post-content {
     margin-top: .5rem;
     margin-bottom: 1rem;
